@@ -13,6 +13,18 @@
 </head>
 <body>
   <div class="container">
+    <div class="row">
+      <nav class="estimacion">
+        <ul>
+          <li><a href="/"></a>Home</li>
+          <li><a href="/empresas"></a>Empresas</li>
+          <li><a href="/clientes"></a>Clientes</li>
+          <li><a href="/usuarios"></a>Usuarios</li>
+          <li><a href="/parametros"></a>Parametros</li>
+          <li><a href="/cotizar"></a>Cotizar</li>
+        </ul>
+      </nav>
+    </div>
     <header>
       <div class="row">
         <div class="col-xs-6">
