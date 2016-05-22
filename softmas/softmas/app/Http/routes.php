@@ -11,34 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+//Route para página inicial
+Route::get('/', 'PagesController@inicio');
 
-Route::get('/clientes', function () {
-  return view('pages.clientes');
-});
 
-Route::get('/cotizar', function() {
-  return view('pages.cotizar');
-});
+//Route para página clientes
+Route::get('/', 'PagesController@clientes');
 
-Route::get('/empresas', function() {
-  return view('pages.empresas');
-});
 
-Route::get('/parametros', function() {
-  return view('pages.parametros');
-});
+//Route para página cotizar
+Route::get('/', 'PagesController@cotizar');
 
-Route::get('/resultado', function() {
-  return view('pages.resultado');
-});
 
-Route::get('/usuarios', function() {
-  return view('pages.usuarios');
-});
+//Route para página empresas
+Route::get('/', 'PagesController@empresas');
 
-Route::get('/cotizacion', function() {
-  return view('pages.cotizacion');
-});
+
+//Route para página parametros
+Route::get('/', 'PagesController@parametros');
+
+
+//Route para página resultado
+Route::get('/', 'PagesController@resultado');
+
+
+//Route para página usuarios
+Route::get('/', 'PagesController@usuarios');
+
+
+//Route para página cotizacion
+Route::get('/', 'PagesController@cotizacion');
