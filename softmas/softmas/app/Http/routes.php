@@ -16,28 +16,28 @@ Route::get('/', 'PagesController@inicio');
 
 
 //Route para página clientes
-Route::get('/', 'PagesController@clientes');
+Route::get('/clientes', 'PagesController@clientes');
 
 
 //Route para página cotizar
-Route::get('/', 'PagesController@cotizar');
+Route::get('/cotizar', 'PagesController@cotizar');
 
 
 //Route para página empresas
-Route::get('/', 'PagesController@empresas');
+Route::get('/empresas', 'PagesController@empresas');
 
 
 //Route para página parametros
-Route::get('/', 'PagesController@parametros');
+Route::get('/parametros', 'PagesController@parametros');
 
 
 //Route para página resultado
-Route::get('/', 'PagesController@resultado');
+Route::get('/resultado', 'PagesController@resultado');
 
 
 //Route para página usuarios
-Route::get('/', 'PagesController@usuarios');
+Route::get('/usuarios', 'PagesController@usuarios');
 
 
 //Route para página cotizacion
-Route::get('/', 'PagesController@cotizacion');
+Route::get('/cotizacion', 'PagesController@cotizacion');
