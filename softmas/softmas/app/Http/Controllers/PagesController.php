@@ -30,7 +30,7 @@ class PagesController extends Controller
     }
 
     //Método para controlar la página de parametros
-    public function parametros()
+    public function parametros() {
       return view('pages.parametros');
     }
 
@@ -47,5 +47,10 @@ class PagesController extends Controller
     //Método para controlar la página de cotizacion
     public function cotizacion() {
       return view('pages.cotizacion');
+    }
+
+    //Método para controlar la página de consulta
+    public function consulta() {
+      return view('pages.consulta');
     }
 }

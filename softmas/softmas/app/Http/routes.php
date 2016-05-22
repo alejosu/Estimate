@@ -41,3 +41,6 @@ Route::get('/usuarios', 'PagesController@usuarios');
 
 //Route para página cotizacion
 Route::get('/cotizacion', 'PagesController@cotizacion');
+
+//Route para página consulta
+Route::get('/consulta', 'PagesController@consulta');

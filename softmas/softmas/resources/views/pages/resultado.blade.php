@@ -1,45 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Resultado de la estimación</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Courgette|Josefin+Sans' rel='stylesheet' type='text/css'>
+@extends('layout')
 
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <nav class="estimacion">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/empresas">Empresas</a></li>
-          <li><a href="/clientes">Clientes</a></li>
-          <li><a href="/usuarios">Usuarios</a></li>
-          <li><a href="/parametros">Parametros</a></li>
-          <li><a href="/cotizar">Cotizar</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="row">
-      <div class="container">
-        <div class="col-xs-3">
-            <image src="images/logoCaudex.PNG" alt="Caudex IT"></image>
-        </div>
-        <div class="col-xs-9">
-          <section class="datos_cliente">
-            <h2>Nombre de cliente</h2>
-            <h3>
-              Desarrollo: Nombre del desarrollo
-            </h3>
-          </section>
-        </div>
-      </div>
-    </div>
+@section('content')
+
     <div class="col-xs-10">
+      <div class="col-xs-9">
+        <section class="datos_cliente">
+          <h2>Nombre de cliente</h2>
+          <h3>
+            Desarrollo: Nombre del desarrollo
+          </h3>
+        </section>
+      </div>
       <form class="formulario" action="index.html" method="post">
         <div class="container">
           <fieldset name="botones" class="form-group text-center">
@@ -84,6 +55,5 @@
         </fieldset>
       </form>
     </div>
-  </div>
-</body>
-</html>
+
+@stop
