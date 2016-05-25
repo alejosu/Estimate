@@ -14,6 +14,13 @@ class CrearTablaEmpresas extends Migration
     {
         Schema::create('empresas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre');
+            $table->string('pais');
+            $table->string('ciudad');
+            $table->string('logo');
+            $table->string('direccion');
+            $table->string('telefono');
+            $table->string('nit');
             $table->timestamps();
         });
     }

@@ -14,6 +14,13 @@ class CrearTablaParametros extends Migration
     {
         Schema::create('parametros', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->decimal('por_doc_tec');
+            $table->decimal('por_doc_cons');
+            $table->decimal('por_pru_tec');
+            $table->decimal('por_pru_cons');
+            $table->decimal('por_recopilacion');
+
             $table->timestamps();
         });
     }
