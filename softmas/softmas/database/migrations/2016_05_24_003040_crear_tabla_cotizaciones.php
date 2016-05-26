@@ -13,9 +13,10 @@ class CrearTablaCotizaciones extends Migration
     public function up()
     {
         Schema::create('cotizaciones', function (Blueprint $table) {
+
             $table->increments('id');
 
-            $table->integer('user_id')->unsigned();
+            $table->integer('usuario_id')->unsigned();
             $table->integer('cliente_id')->unsigned();
             $table->integer('total_horas');
             $table->float('total_monto');
@@ -24,7 +25,7 @@ class CrearTablaCotizaciones extends Migration
         });
 
         Schema::table('cotizaciones', function (Blueprint $table) {
-            $table->foreign('user_id')->references('id')->on('usuarios');
+            $table->foreign('usuario_id')->references('id')->on('usuarios');
             $table->foreign('cliente_id')->references('id')->on('clientes');
         });
     }
