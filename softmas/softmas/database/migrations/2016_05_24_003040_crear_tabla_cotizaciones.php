@@ -16,15 +16,16 @@ class CrearTablaCotizaciones extends Migration
             $table->increments('id');
 
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('usuarios');
-
-            $table->string('nit');
-            $table->foreign('nit')->references('nit')->on('clientes');
-
+            $table->string('nit')->unsigned();
             $table->integer('total_horas');
             $table->float('total_monto');
 
             $table->timestamps();
+        });
+
+        Schema::table('cotizaciones', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('usuarios');
+            $table->foreign('cliente_id')->references('id')->on('clientes');
         });
     }
 

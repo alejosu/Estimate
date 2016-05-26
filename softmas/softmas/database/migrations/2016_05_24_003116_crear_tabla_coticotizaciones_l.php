@@ -15,14 +15,17 @@ class CrearTablaCoticotizacionesL extends Migration
         Schema::create('cotizaciones_l', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('id_cotizacion');
-            $table->foreign('id_cotizacion')->references('id')->on('cotizaciones');
+            $table->integer('id_cotizacion')->unsigned();
             $table->integer('horas');
             $table->float('valor');
             $table->date('fecha_entrega');
             $table->date('fecha_inicio');
 
             $table->timestamps();
+        });
+
+        Schema::table('cotizaciones_l', function (Blueprint $table) {
+            $table->foreign('id_cotizacion')->references('id')->on('cotizaciones');
         });
     }
 
