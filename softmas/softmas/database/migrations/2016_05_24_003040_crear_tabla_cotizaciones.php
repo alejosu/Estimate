@@ -16,7 +16,7 @@ class CrearTablaCotizaciones extends Migration
             $table->increments('id');
 
             $table->integer('user_id')->unsigned();
-            $table->string('cliente_id')->unsigned();
+            $table->integer('cliente_id')->unsigned();
             $table->integer('total_horas');
             $table->float('total_monto');
 
