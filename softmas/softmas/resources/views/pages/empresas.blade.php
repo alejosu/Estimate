@@ -29,4 +29,61 @@
         </div>
       </form>
 
-@stop    
+
+
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>
+              Nit
+            </th>
+            <th>
+              Nombre
+            </th>
+            <th>
+              Dirección
+            </th>
+            <th>
+              Teléfono
+            </th>
+            <th>
+              Logo
+            </th>
+            <th>
+              Pais
+            </th>
+            <th>
+              Ciudad
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($empresas as $empresa)
+          <tr>
+            <td>
+              {{ $empresa->nit }}
+            </td>
+            <td>
+              {{ $empresa->nombre }}
+            </td>
+            <td>
+              {{ $empresa->direccion }}
+            </td>
+            <td>
+              {{ $empresa->telefono }}
+            </td>
+            <td>
+              {{ $empresa->logo }}
+            </td>
+            <td>
+              {{ $empresa->pais }}
+            </td>
+            <td>
+              {{ $empresa->ciudad }}
+            </td>
+          </tr>
+          @endforeach
+        </tbody>
+      </table>
+
+@stop

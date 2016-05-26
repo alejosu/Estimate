@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use softmas\Http\Requests;
 
+use softmas\empresa;
+
 class PagesController extends Controller
 {
 
@@ -16,7 +18,11 @@ class PagesController extends Controller
 
     //Método para controlar la página de empresas
     public function empresas() {
-      return view('pages.empresas');
+
+      $empresas = Empresa::all();
+
+      return view('pages.empresas', compact('empresas'));
+
     }
 
     //Método para controlar la página de clientes
