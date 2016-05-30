@@ -27,11 +27,17 @@ class PagesController extends Controller
 
     //Método para controlar la página de clientes
     public function clientes() {
-      return view('pages.clientes');
+
+      $clientes = Cliente::all();
+
+      return view('pages.clientes', compact('clientes'));
     }
 
     //Método para controlar la página de usuarios
     public function usuarios() {
+
+      $usuarios = Usuario::all();
+
       return view('pages.usuarios');
     }
 
