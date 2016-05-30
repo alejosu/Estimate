@@ -33,4 +33,59 @@
         </div>
       </form>
 
-@stop    
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>
+              Nit
+            </th>
+            <th>
+              Nombre
+            </th>
+            <th>
+              Dirección
+            </th>
+            <th>
+              Teléfono
+            </th>
+            <th>
+              Logo
+            </th>
+            <th>
+              Valor hora
+            </th>
+            <th>
+              Contacto
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($clientes as $cliente)
+          <tr>
+            <td>
+              {{ $cliente->nit }}
+            </td>
+            <td>
+              {{ $cliente->nombre }}
+            </td>
+            <td>
+              {{ $cliente->direccion }}
+            </td>
+            <td>
+              {{ $cliente->telefono }}
+            </td>
+            <td>
+              {{ $cliente->logo }}
+            </td>
+            <td>
+              {{ $cliente->valor_hora }}
+            </td>
+            <td>
+              {{ $cliente->contacto }}
+            </td>
+          </tr>
+          @endforeach
+        </tbody>
+      </table>
+
+@stop

@@ -33,4 +33,41 @@
         </div>
       </form>
 
+
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>
+              Id
+            </th>
+            <th>
+              Nombre
+            </th>
+            <th>
+              Empresa
+            </th>
+            <th>
+              Cargo
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($usuarios as $usuario)
+          <tr>
+            <td>
+              {{ $usuario->cedula }}
+            </td>
+            <td>
+              {{ $usuario->nombre }}
+            </td>
+            <td>
+              {{ $usuario->empresa }}
+            </td>
+            <td>
+              {{ $usuario->cargo }}
+            </td>
+          </tr>
+          @endforeach
+        </tbody>
+      </table>
 @stop

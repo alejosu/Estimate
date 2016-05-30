@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 use softmas\Http\Requests;
 
-use softmas\empresa;
+use softmas\Empresa;
+use softmas\Cliente;
+use softmas\Usuario;
 
 class PagesController extends Controller
 {
@@ -38,7 +40,7 @@ class PagesController extends Controller
 
       $usuarios = Usuario::all();
 
-      return view('pages.usuarios');
+      return view('pages.usuarios', compact('usuarios'));
     }
 
     //Método para controlar la página de parametros
