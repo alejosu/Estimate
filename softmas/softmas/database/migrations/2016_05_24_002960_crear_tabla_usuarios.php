@@ -16,8 +16,8 @@ class CrearTablaUsuarios extends Migration
 
             $table->increments('id');
 
-            $table->integer('empresa')->unsigned();
-            $table->integer('cedula');
+            $table->integer('empresa_id')->unsigned()->index();
+            $table->string('cedula');
             $table->string('nombre');
             $table->string('cargo');
 
@@ -25,7 +25,7 @@ class CrearTablaUsuarios extends Migration
         });
 
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->foreign('empresa')->references('id')->on('empresas');
+            $table->foreign('empresa_id')->references('id')->on('empresas');
         });
     }
 
