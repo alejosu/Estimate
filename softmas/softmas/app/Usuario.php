@@ -8,8 +8,8 @@ use softmas\Empresa;
 
 class Usuario extends Model
 {
-    /*public function empresa()
+    public function empresa()
     {
       return this->belongsTo(Empresa::class);
-    }*/
+    }
 }
