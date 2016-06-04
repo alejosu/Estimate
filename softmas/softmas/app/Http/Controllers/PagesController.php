@@ -27,6 +27,25 @@ class PagesController extends Controller
 
     }
 
+    //Método para crear empresas
+    public function crearEmpresa(Request $request) {
+
+      $emp = new Empresa();
+
+      $emp->nombre = $request->nombre;
+      $emp->pais = $request->pais;
+      $emp->ciudad = $request->ciudad;
+      $emp->logo = $request->logo;
+      $emp->direccion = $request->direccion;
+      $emp->telefono = $request->telefono;
+      $emp->nit = $request->nit;
+
+      $emp->save();
+
+      return back();
+
+    }
+
     //Método para controlar la página de clientes
     public function clientes() {
 
@@ -67,4 +86,6 @@ class PagesController extends Controller
     public function consulta() {
       return view('pages.consulta');
     }
+
+
 }
