@@ -54,6 +54,24 @@ class PagesController extends Controller
       return view('pages.clientes', compact('clientes'));
     }
 
+    //Método para crear clientes
+    public function crearCliente(Request $request) {
+
+      $cliente = new Cliente();
+
+      $cliente->nombre = $request->nombre;
+      $cliente->nit = $request->nit;
+      $cliente->direccion = $request->direccion;
+      $cliente->telefono = $request->telefono;
+      $cliente->logo = $request->logo;
+      $cliente->contacto = $request->contacto;
+      $cliente->valor_hora = $request->valor_hora;
+
+      $cliente->save();
+
+      return back();
+    }
+
     //Método para controlar la página de usuarios
     public function usuarios() {
 

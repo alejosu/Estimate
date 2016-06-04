@@ -18,6 +18,9 @@ Route::get('/', 'PagesController@inicio');
 //Route para página clientes
 Route::get('/clientes', 'PagesController@clientes');
 
+//Route para crear clientes
+Route::post('/clientes/crearCliente', 'PagesController@crearCliente');
+
 
 //Route para página cotizar
 Route::get('/cotizar', 'PagesController@cotizar');
@@ -26,9 +29,9 @@ Route::get('/cotizar', 'PagesController@cotizar');
 //Route para página empresas
 Route::get('/empresas', 'PagesController@empresas');
 
-
 //Route para crear empresas
 Route::post('/empresas/crearEmpresa', 'PagesController@crearEmpresa');
+
 
 //Route para página parametros
 Route::get('/parametros', 'PagesController@parametros');
