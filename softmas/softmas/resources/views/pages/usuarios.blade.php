@@ -2,10 +2,8 @@
 
 @section('content')
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Crear nuevo usuario</h1>
-        </div>
+      <div class="container-fluid">
+          <h1 class="text-center">USUARIOS</h1>
       </div>
 
       <table class="table table-striped table-hover">
@@ -44,6 +42,10 @@
           @endforeach
         </tbody>
       </table>
+
+      <div class="container-fluid">
+          <h2 class="text-center">CREAR USUARIO</h2>
+      </div>
 
       <div class="col-xs-4 col-xs-offset-4">
         <form class="formulario" action="/usuarios/crearUsuario" method="post">

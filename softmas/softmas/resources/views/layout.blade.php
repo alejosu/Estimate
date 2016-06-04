@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Courgette|Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans|Josefin+Sans' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -15,15 +15,17 @@
   <div class="container">
     <header>
       <div class="row">
-        <nav class="estimacion">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/empresas">Empresas</a></li>
-            <li><a href="/clientes">Clientes</a></li>
-            <li><a href="/usuarios">Usuarios</a></li>
-            <li><a href="/parametros">Parametros</a></li>
-            <li><a href="/cotizar">Cotizar</a></li>
-          </ul>
+        <nav class="estimacion navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav nav-pills">
+              <li><a href="/">Home</a></li>
+              <li><a href="/empresas">Empresas</a></li>
+              <li><a href="/clientes">Clientes</a></li>
+              <li><a href="/usuarios">Usuarios</a></li>
+              <li><a href="/parametros">Parametros</a></li>
+              <li><a href="/cotizar">Cotizar</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="row">

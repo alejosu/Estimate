@@ -2,10 +2,8 @@
 
 @section('content')
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Crear nueva empresa</h1>
-        </div>
+      <div class="container-fluid">
+          <h1 class="text-center">EMPRESAS</h1>
       </div>
 
       <div class="col-xs-12">
@@ -65,6 +63,10 @@
         </table>
 
 
+      </div>
+
+      <div class="container-fluid">
+          <h2 class="text-center">CREAR EMPRESA</h2>
       </div>
 
       <div class="row">

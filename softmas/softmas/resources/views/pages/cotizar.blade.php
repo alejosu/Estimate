@@ -2,10 +2,8 @@
 
 @section('content')
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Estimación de desarrollos para Dynamics AX</h1>
-        </div>
+      <div class="container-fluid">
+          <h1 class="text-center">COTIZAR DESARROLLO</h1>
       </div>
 
       <div class="col-xs-4 col-xs-offset-4">

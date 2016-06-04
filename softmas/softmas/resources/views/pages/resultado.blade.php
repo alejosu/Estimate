@@ -2,21 +2,25 @@
 
 @section('content')
 
-    <div class="col-xs-10">
-      <div class="col-xs-9">
-        <section class="datos_cliente">
-          <h2>Nombre de cliente</h2>
-          <h3>
-            Desarrollo: Nombre del desarrollo
-          </h3>
-        </section>
-      </div>
+
+    <div class="container">
+      <section class="datos_cliente">
+        <h2 class="text-center">Nombre de cliente</h2>
+        <h3 class="text-center">
+          Desarrollo: Nombre del desarrollo
+        </h3>
+      </section>
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1">
       <form class="formulario" action="index.html" method="post">
         <div class="container">
-          <fieldset name="botones" class="form-group text-center">
-            <input type="button" name="imprimir" value="Imprimir cotización" class="btn btn-danger">
-            <input type="button" name="guardar" value="Guardar en PDF" class="btn btn-primary">
-          </fieldset>
+          <div class="col-xs-3 col-xs-offset-6">
+            <fieldset name="botones" class="form-group text-center">
+              <input type="button" name="imprimir" value="Imprimir cotización" class="btn btn-danger">
+              <input type="button" name="guardar" value="Guardar en PDF" class="btn btn-primary">
+            </fieldset>
+          </div>
         </div>
         <fieldset name="requerimiento" class="form-group">
           <legend>Requerimiento</legend>

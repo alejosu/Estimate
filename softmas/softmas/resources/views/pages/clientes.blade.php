@@ -2,10 +2,8 @@
 
 @section('content')
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Crear nuevo cliente</h1>
-        </div>
+      <div class="container-fluid">
+          <h1 class="text-center">CLIENTES</h1>
       </div>
 
 
@@ -63,6 +61,10 @@
           @endforeach
         </tbody>
       </table>
+
+      <div class="container-fluid">
+          <h2 class="text-center">CREAR CLIENTE</h2>
+      </div>
 
       <div class="col-xs-4 col-xs-offset-4">
         <form class="formulario" action="/clientes/crearCliente" method="post">
