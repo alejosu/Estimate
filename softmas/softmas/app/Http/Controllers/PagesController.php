@@ -80,6 +80,22 @@ class PagesController extends Controller
       return view('pages.usuarios', compact('usuarios'));
     }
 
+    //Método para crear usuarios
+    public function crearUsuario(Request $request) {
+
+      $usuario = new Usuario();
+
+      $usuario->empresa_id = $request->empresa;
+      $usuario->cedula = $request->cedula;
+      $usuario->nombre = $request->nombre;
+      $usuario->cargo = $request->cargo;
+
+      $usuario->save();
+
+      return back();
+
+    }
+
     //Método para controlar la página de parametros
     public function parametros() {
       return view('pages.parametros');

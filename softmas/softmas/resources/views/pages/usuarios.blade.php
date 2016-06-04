@@ -46,8 +46,9 @@
       </table>
 
       <div class="col-xs-4 col-xs-offset-4">
-        <form class="formulario" action="index.html" method="post">
+        <form class="formulario" action="/usuarios/crearUsuario" method="post">
           <fieldset name="usuario" class="form-group">
+            <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
             <label for="cedula">Cédula:</label>
             <input type="text" name="cedula" value="" class="form-control">
             <label for="nombre">Nombre:</label>
@@ -68,7 +69,7 @@
             <input type="text" name="empresa" value="" class="form-control">
           </fieldset>
           <div class="form-group">
-            <input type="button" name="crear" value="Crear" class="boton btn btn-primary">
+            <input type="submit" name="crear" value="Crear" class="boton btn btn-primary">
           </div>
         </form>
       </div>
