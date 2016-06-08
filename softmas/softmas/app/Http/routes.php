@@ -50,8 +50,11 @@ Route::get('/resultado', 'PagesController@resultado');
 //Route para página usuarios
 Route::get('/usuarios', 'PagesController@usuarios');
 
+//Route para pagina de crear usuario
+Route::get('/crearUsuario', 'PagesController@crearUsuario');
+
 //Route para crear usuarios
-Route::post('/usuarios/crearUsuario', 'PagesController@crearUsuario');
+Route::post('/crearUsuario', 'PagesController@crearUsuarioRequest');
 
 
 //Route para página cotizacion

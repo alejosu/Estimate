@@ -67,7 +67,7 @@ class PagesController extends Controller
     public function crearCliente() {
 
       return view('pages.crearCliente');
-      
+
     }
 
     //Método para crear clientes
@@ -98,8 +98,15 @@ class PagesController extends Controller
       return view('pages.usuarios', compact('usuarios'));
     }
 
+    //Método para la página de creación de usuarios
+    public function crearUsuario() {
+
+      return view('pages.crearUsuario');
+
+    }
+
     //Método para crear usuarios
-    public function crearUsuario(Request $request) {
+    public function crearUsuarioRequest(Request $request) {
 
       $usuario = new Usuario();
 
@@ -110,7 +117,9 @@ class PagesController extends Controller
 
       $usuario->save();
 
-      return back();
+      $usuarios = Usuario::all();
+
+      return view('pages.usuarios', compact('usuarios'));
 
     }
 
