@@ -27,9 +27,11 @@ class PagesController extends Controller
 
     }
 
-
+    //Método para llamar la página de creacion de empresas
     public function crearEmpresa() {
+
       return view('pages.crearEmpresa');
+
     }
 
     //Método para crear empresas
@@ -61,8 +63,15 @@ class PagesController extends Controller
       return view('pages.clientes', compact('clientes'));
     }
 
+    //Método para llamar la pagina de creación de clientes
+    public function crearCliente() {
+
+      return view('pages.crearCliente');
+      
+    }
+
     //Método para crear clientes
-    public function crearCliente(Request $request) {
+    public function crearClienteRequest(Request $request) {
 
       $cliente = new Cliente();
 
@@ -76,7 +85,9 @@ class PagesController extends Controller
 
       $cliente->save();
 
-      return back();
+      $clientes = Cliente::all();
+
+      return view('pages.clientes', compact('clientes'));
     }
 
     //Método para controlar la página de usuarios
