@@ -27,8 +27,13 @@ class PagesController extends Controller
 
     }
 
+
+    public function crearEmpresa() {
+      return view('pages.crearEmpresa');
+    }
+
     //Método para crear empresas
-    public function crearEmpresa(Request $request) {
+    public function crearEmpresaRequest(Request $request) {
 
       $emp = new Empresa();
 
@@ -42,7 +47,9 @@ class PagesController extends Controller
 
       $emp->save();
 
-      return back();
+      $empresas = Empresa::all();
+
+      return view('pages.empresas', compact('empresas'));
 
     }
 

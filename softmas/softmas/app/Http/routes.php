@@ -29,8 +29,11 @@ Route::get('/cotizar', 'PagesController@cotizar');
 //Route para página empresas
 Route::get('/empresas', 'PagesController@empresas');
 
+//Route para página empresas
+Route::get('/crearEmpresa', 'PagesController@crearEmpresa');
+
 //Route para crear empresas
-Route::post('/empresas/crearEmpresa', 'PagesController@crearEmpresa');
+Route::post('/crearEmpresa', 'PagesController@crearEmpresaRequest');
 
 
 //Route para página parametros
