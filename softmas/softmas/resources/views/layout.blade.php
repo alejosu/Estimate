@@ -23,7 +23,7 @@
               <li><a href="/clientes">Clientes</a></li>
               <li><a href="/usuarios">Usuarios</a></li>
               <li><a href="/parametros">Parametros</a></li>
-              <li><a href="/cotizar">Cotizar</a></li>
+              <li><a href="/cotizaciones">Cotizaciones</a></li>
             </ul>
           </div>
         </nav>

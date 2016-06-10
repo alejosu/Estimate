@@ -25,10 +25,6 @@ Route::get('/crearCliente', 'PagesController@crearCliente');
 Route::post('/crearCliente', 'PagesController@crearClienteRequest');
 
 
-//Route para página cotizar
-Route::get('/cotizar', 'PagesController@cotizar');
-
-
 //Route para página empresas
 Route::get('/empresas', 'PagesController@empresas');
 
@@ -39,12 +35,14 @@ Route::get('/crearEmpresa', 'PagesController@crearEmpresa');
 Route::post('/crearEmpresa', 'PagesController@crearEmpresaRequest');
 
 
+
 //Route para página parametros
 Route::get('/parametros', 'PagesController@parametros');
 
 
 //Route para página resultado
 Route::get('/resultado', 'PagesController@resultado');
+
 
 
 //Route para página usuarios
@@ -57,8 +55,11 @@ Route::get('/crearUsuario', 'PagesController@crearUsuario');
 Route::post('/crearUsuario', 'PagesController@crearUsuarioRequest');
 
 
-//Route para página cotizacion
-Route::get('/cotizacion', 'PagesController@cotizacion');
+//Route para consultar cotizacionnes
+Route::get('/cotizaciones', 'PagesController@cotizaciones');
 
-//Route para página consulta
-Route::get('/consulta', 'PagesController@consulta');
+//Route para página cotizar
+Route::get('/crearCotizacion', 'PagesController@crearCotizacion');
+
+//Route para crear cotizacion
+Route::post('/crearCotizacionRequest', 'PagesController@crearCotizacionRequest');

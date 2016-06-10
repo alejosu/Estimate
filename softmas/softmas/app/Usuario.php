@@ -10,4 +10,9 @@ class Usuario extends Model
     {
       return $this->belongsTo(Empresa::class);
     }
+
+    public function cotizacion()
+    {
+      return $this->hasMany(Cotizacion::class);
+    }
 }

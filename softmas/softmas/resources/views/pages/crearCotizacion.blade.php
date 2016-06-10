@@ -7,7 +7,7 @@
       </div>
 
       <div class="col-xs-4 col-xs-offset-4">
-        <form class="formulario" action="index.html" method="post">
+        <form class="formulario" action="/crearCotizacionRequest" method="post">
           <div class="form-group">
             <select class="combobox form-control" name="cliente" placeholder="Cliente">
               <option value="Cliente" selected>Cliente</option>
