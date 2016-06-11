@@ -39,6 +39,9 @@ Route::post('/crearEmpresa', 'PagesController@crearEmpresaRequest');
 //Route para página parametros
 Route::get('/parametros', 'PagesController@parametros');
 
+//Route para página parametros
+Route::post('/crearParametros', 'PagesController@crearParametros');
+
 
 //Route para página resultado
 Route::get('/resultado', 'PagesController@resultado');

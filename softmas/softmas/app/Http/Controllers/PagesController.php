@@ -129,6 +129,21 @@ class PagesController extends Controller
       return view('pages.parametros');
     }
 
+    //Método para controlar la página de parametros
+    public function crearParametros(Request $request) {
+
+      $parametros = new Parametros();
+
+      $parametros->por_doc_tec = $request->por_doc_tec;
+      $parametros->por_doc_cons = $request->por_doc_cons;
+      $parametros->por_pru_tec = $request->por_pru_cons;
+      $parametros->por_recopilacion = $request->por_recopilacion;
+
+      $parametros->save();
+
+      return back();
+    }
+
     //Método para controlar la página de resultado
     public function resultado() {
       return view('pages.resultado');

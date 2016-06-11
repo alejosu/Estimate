@@ -8,7 +8,7 @@
 
 
       <div class="col-xs-4 col-xs-offset-4">
-        <form class="formulario" action="parametros.html" method="post">
+        <form class="formulario" action="/crearParametros" method="post">
 
           <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
           <fieldset name="Tecnologia" class="form-group">
